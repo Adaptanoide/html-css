@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste PDF02</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            # = id usado em uma vez na pag
+            . = class usado para criar uma class de conf
+            : = pseudo-class usada para definir um estado especial de um elemento
+            :: = pseudo-element usado para estilizar uma parte especifica do HTML direto do CSS
+            > = children refere-se aos elementos filhos diretos de um determinado elemento      
+        */
+
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            width: 150px;
+            height: 30px;
+            display: block;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteudo especial</h1>
+    <div>
+        Passe o mouse aqui
+        <p>SURPRESAAAA!</p>
+    </div>
+    <p>Veja o conteudo oculto aparecendo!</p>
+</body>
+</html>
