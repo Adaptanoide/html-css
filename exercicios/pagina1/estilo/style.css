@@ -19,9 +19,15 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: white;
-    padding: 15px;
-    padding-bottom: 20px;
+    opacity: 95%;
+    padding: 24px;
+
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.312);
+    
 }
 
 nav > a {
@@ -37,7 +43,6 @@ nav >a:hover {
 }
 
 .fundo01 {
-    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.425);
     width: auto;
     height: 500px;
     background-image: url(../imagens/background-main2.jpg);
@@ -47,22 +52,15 @@ nav >a:hover {
     
 }
 
-div > h2 {
-    padding-top: 20px;
-    padding-left: 90px;
+h2 {
+    padding-top: 125px;
     font-family: var(--fonte02);
     font-weight: bolder;
     font-size: 40px;
     color: rgba(0, 0, 0, 0.5);
+    padding-left: 130px;
 }
 
-.confq {
-    font-family: var(--fonte02);
-    font-weight: bolder;
-    font-size: 40px;
-    color: rgba(0, 0, 0, 0.5);
-    padding-left: 200px;
-}
 
 h1 {
     font-family: var(--fonte02);
@@ -83,8 +81,8 @@ h1 {
 }
 
 div > ul {
+    padding-left: 200px;
     list-style-position: inside;
-    padding: 10px 200px;
     text-align: justify;
     font-family: var(--fonte01);
     font-size: larger;
@@ -97,4 +95,40 @@ ul li::before {
     padding-right: 15px;
 }
 
+h3 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
 
+.container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+video {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.178);
+    color: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: bisque;
+}
