@@ -11,7 +11,6 @@
 
         table {
             border-collapse: collapse;
-            background-color: rgb(235, 235, 235);
         }
 
         th, td {
@@ -50,13 +49,13 @@
             Filmes Favoritos
         </caption>
         <thead>
-            <th>Grupos</th>
-            <th>Nome</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nome</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -75,7 +74,7 @@
                 <td>Bid Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocaveis</td>
                 <td>Amnesia</td>
@@ -96,7 +95,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="5">Feito por <a href="https://github.com/Adaptanoide" target="_blank">Tiago</a></td>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
             </tr>
         </tfoot>
     </table>
